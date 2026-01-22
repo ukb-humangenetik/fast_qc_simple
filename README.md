@@ -150,7 +150,7 @@ Output naming guidance:
 - Recommended convention: set `--out <sample_id>.csv` (e.g. `--out SAMPLE123.csv`) so the filename matches the `sample_id` in the report.
 - If you omit `--sample-id`, the script derives it from the CRAM filename (without `.cram/.bam/.sam`), and the logfile name follows that derived ID (`<sample_id>.log`).
 
-Count duplicates (if you want to count duplicates in mosdepth results):
+Include duplicate-marked reads in mosdepth coverage/depth calculations (default: duplicates are excluded):
 
 ```/dev/null/usage_dup.sh#L1-2
 ./fast_qc_simple.py ... --count-dup
