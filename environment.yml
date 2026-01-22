@@ -1,0 +1,9 @@
+name: fast_qc_simple
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - python>=3.9
+  - mosdepth
+  - samtools
+  - rich=13.*
